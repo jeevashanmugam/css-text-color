@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title> CSS TEXT </title>
+</head>
+
+<style>
+.Types{
+ text-align:center;
+ color:black;
+ background-color:gray;
+}
+
+h1{
+color:blue;
+}
+.image{
+vertical-align: baseline;
+}
+.Decoration>p{
+text-decoration-color:yellow;"
+}
+.Transformation>li{
+color:red
+}
+.indent{
+ text-indent: 50px;
+}
+.letter-spacing{
+letter-spacing:20px;
+}
+.line-height{
+line-height:50px;
+}
+.word-spacing{
+word-spacing:20px;
+}
+.white{
+white-space:nowrap;
+}
+.shadow{
+text-shadow:3px 3px ;
+
+}
+
+<!-- .Alignment{ -->
+<!-- font-size:30px;} -->
+
+
+</style>
+
+<body>
+
+<h1 class="Types"> Types of CSS Text </h1>
+<hr>
+<div>
+<h1>1) Text color</h1>
+<ol>
+	 <li> a color name - like "red"</li>
+	 <li> a HEX value - like "#ff0000"</li>
+	 <li> an RGB value - like "rgb(255,0,0)"</li>
+ </ol>
+</div>
+<hr>
+
+<h1>2) Text Alignment</h1>
+<ol>
+	<li>text-align</li>
+    <li>text-align-last</li>
+	<li>direction</li>
+	<li>unicode-bidi</li>
+	<li>vertical-align</li>
+</ol>
+<hr>
+
+<h1>3) Text Decoration</h1>
+<ol>
+	<li>text-decoration-line</li>
+	<li>text-decoration-color</li>
+	<li>text-decoration-style</li>
+	<li>text-decoration-thickness</li>
+	<li>text-decoration
+</ol>
+<hr>
+
+<h1>4)Text Transformation</h1>
+<ol>
+	<li>Upper case</li>
+    <li>Lower case</li>
+	<li>Capitalize</li>
+</ol>
+ <hr>
+ 
+<h1>5)Text Spacing </h1>
+<ol>
+	<li>text-indent</li>
+	<li>letter-spacing</li>
+	<li>line-height</li>
+	<li>word-spacing</li>
+	<li>white-space</li>
+</ol> 
+<hr>
+
+<h1>6)Text Shadow </h1>
+  
+
+<h2 style="color:red"> Example's</h2>
+ 
+<h2>1)Text color</h2>
+<!-- a color name - like "red" -->
+<p style="color:green">1) a color name - like "red"</p>
+ 
+<!-- a HEX value - like "#ff0000" -->
+<p style="color:#FF0078">2) a HEX value - like "#ff0000"</p>
+
+<!-- an RGB value - like "rgb(255,0,0)" -->
+<p style="color:rgb(255,0,0)">3) an RGB value - like "rgb(255,0,0)"</p>
+<hr>
+
+<h2>2) Text Alignment and Direction</h2>
+<p>1)Text Alignment: center, left, right, justify</p>
+<p>2)Text Alignmen last: center, left, right</p>
+
+<h3 >Example of Text-align:justify</h3>
+<p style="text-align:justify; border:1px solid ">In my younger and more vulnerable years my father gave me some advice that 
+	I've been turning over in my mind ever since.'Whenever you feel like criticizing anyone,
+	' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+	
+<p>3)Direction</p>
+<p> Its consisder the (lrt)-Left to right and (rtl)-Right to left</p>
+<p> syntax:direction: rtl;</p>
+
+<p>4)unicode-bidi</p>
+  <p> syntax: unicode-bidi: bidi-override; </p>
+
+<p>5)vertical align</p>
+<ol>
+	<li>baseline (default)</li>
+	<li>text-top </li>
+	<li>text-bottom </li>
+	<li>align: sub </li>
+	<li>vertical-align: super:</li>
+</ol>
+<p style="color:red">Example for Baseline</p>
+<p> The <img class="image" src="./image/html.webp" alt="image" width="30px"> image of HTML </p>
+<hr>	
+
+<h2>3) Text Decoration (line and color)</h2>
+    <p> We can use both  (line and color)</p>
+	<p> Syntax:  { text-decoration-line: overline;<br>
+&emsp; &emsp; &emsp; text-decoration-color: red;}</p>
+
+<div class="Decoration">
+   <p style="text-decoration-line: overline;">Example of Overline </p>
+   <p style="text-decoration-line: underline;">Example of underline</p>
+   <p style="text-decoration-line: line-through;">Example of line-through</p>
+   
+   <p>And also we use the <b>text-decoration-line: overline, underline, line-through</b><p>
+   <ol>
+      <li>text-decoration-style: double</li>
+      <li>text-decoration-style: dotted</li>
+      <li>text-decoration-style: dashed</li>
+      <li>text-decoration-style: wavy</li>
+</div>
+<hr>
+<h2>4)Text Transformation</h2>
+<p>Syntax: {text-transform: uppercase;}
+<ol class="Transformation"> It consisder the three type:
+     <p> All word should be <b>Capital letter</b></p><li>uppercase</li>
+     <p> All word should be <b>Small letter</b></p><li>lowercase</li>
+     <p> Each word should start at <b>Capitan</b></p><li>capitalize</li>
+</ol>
+<hr>
+
+<h2>5) Text Spacing</h2>
+<h2>1) text-indent</h2>
+<p> indent means its move some space in first line</p>
+<p class="indent">In my younger and more vulnerable years my father gave me some advice that 
+I've been turning over in my mind ever since.'Whenever you feel like criticizing anyone,
+' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+<h2>2) letter Spacing </h2>
+<p class="letter-spacing"> This is jeeva current studing in fabevy tech</p>
+
+<h2>3) line height</h2>
+<p class="line-height">In my younger and more vulnerable years my father gave me some advice that 
+I've been turning over in my mind ever since.'Whenever you feel like criticizing anyone,
+' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+<h2>4) word sapcing</h2>
+<p class="word-spacing"> This is jeeva current studing in fabevy tech</p>
+
+<h2>5) White Sapcing</h2>
+<p class="white">In my younger and more vulnerable years my father gave me some advice that 
+I've been turning over in my mind ever since.'Whenever you feel like criticizing anyone,
+' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+<h2>6) Shadow</h2>
+<p> syntax: text-shadow: 2px(Left to right) 2px(top and buttom) red(color)</p>
+<h1 class="shadow" >jeeva </h1>
+
+</body>
+</html>
